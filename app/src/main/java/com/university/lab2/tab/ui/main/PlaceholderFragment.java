@@ -1,5 +1,6 @@
 package com.university.lab2.tab.ui.main;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -14,6 +15,7 @@ import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
 
 import com.university.lab2.R;
+import com.university.lab2.main.MainActivity;
 import com.university.lab2.tab.TabActivity;
 
 /**
@@ -56,7 +58,7 @@ public class PlaceholderFragment extends Fragment {
                 button.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        new TabActivity().openMainActivity();
+                        startActivity(new Intent(getContext(), MainActivity.class));
                     }
                 });
             } else {
