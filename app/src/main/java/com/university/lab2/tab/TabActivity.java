@@ -1,6 +1,5 @@
 package com.university.lab2.tab;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
@@ -11,7 +10,6 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
 import com.google.android.material.tabs.TabLayout;
 import com.university.lab2.R;
-import com.university.lab2.main.MainActivity;
 import com.university.lab2.tab.ui.main.SectionsPagerAdapter;
 
 public class TabActivity extends AppCompatActivity {
@@ -38,7 +36,4 @@ public class TabActivity extends AppCompatActivity {
 
     }
 
-    public void openMainActivity() {
-        startActivity(new Intent(TabActivity.this, MainActivity.class));
-    }
 }
